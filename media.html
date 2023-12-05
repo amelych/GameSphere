@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script src="./assets/js/template-loader.js"></script>
+
+</head>
+
+<body>
+  <header id="cabecera"></header>
+  <main>
+    <section>
+      <h1>Media</h1>
+      <article>
+        <h3>Videos</h3>
+        <div class="media">
+          <div class="videos">
+            <video id="video1">
+              <source src="./media/videos/video1.mp4" type="video/mp4" />
+              <p>Tu navegador no soporta el reproductor de vídeos</p>
+            </video>
+            <div class="controles">
+              <button id="playButton_1">►</button>
+              <button id="pauseButton_1">❚❚</button>
+              <button id="stopButton_1">⏹️</button>
+              <button id="muteButton_1">🔈</button>
+              <input type="range" id="volumeSlider_1" min="0" max="1" step="0.1" value="1" />
+            </div>
+          </div>
+
+          <div class="videos">
+            <video id="video2">
+              <source src="./media/videos/video2.mp4" type="video/mp4" />
+              <p>Tu navegador no soporta el reproductor de vídeos</p>
+            </video>
+            <div class="controles">
+              <button id="playButton_2">►</button>
+              <button id="pauseButton_2">❚❚</button>
+              <button id="stopButton_2">⏹️</button>
+              <button id="muteButton_2">🔈</button>
+              <input type="range" id="volumeSlider_2" min="0" max="1" step="0.1" value="1" />
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="album">
+        <h3>Álbum de fotos</h3>
+        <div class="slideshow">
+          <div class="fotos fade">
+            <div class="numeros">1 / 5</div>
+            <img src="media/imagen1.jpg" alt="Imagen 1" style="width: 100%" />
+            <div class="texto">Imagen 1</div>
+          </div>
+
+          <div class="fotos fade">
+            <div class="numeros">2 / 5</div>
+            <img src="media/imagen2.jpg" alt="Imagen 2" style="width: 100%" />
+            <div class="texto">Imagen 2</div>
+          </div>
+
+          <div class="fotos fade">
+            <div class="numeros">3 / 5</div>
+            <img src="media/imagen3.jpg" alt="Imagen 3" style="width: 100%" />
+            <div class="texto">Imagen 3</div>
+          </div>
+
+          <div class="fotos fade">
+            <div class="numeros">4 / 5</div>
+            <img src="media/imagen4.jpg" alt="Imagen 4" style="width: 100%" />
+            <div class="texto">Imagen 4</div>
+          </div>
+
+          <div class="fotos fade">
+            <div class="numeros">5 / 5</div>
+            <img src="media/imagen5.jpg" alt="Imagen 5" style="width: 100%" />
+            <div class="texto">Imagen 5</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+
+        <div class="puntos">
+          <span class="punto" onclick="currentSlide(1)"></span>
+          <span class="punto" onclick="currentSlide(2)"></span>
+          <span class="punto" onclick="currentSlide(3)"></span>
+          <span class="punto" onclick="currentSlide(4)"></span>
+          <span class="punto" onclick="currentSlide(5)"></span>
+        </div>
+      </article>
+    </section>
+    <script src="./assets/js/videos.js"></script>
+    <script src="./assets/js/slideshow.js"></script>
+  </main>
+  <footer id="footer"></footer>
+</body>
+
+</html>

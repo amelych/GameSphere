@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú Responsive</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/ejercicios.css" />
+    <script src="../assets/js/template-loader.js"></script>
+  </head>
+
+  <body>
+    <header id="cabecera">
+      
+    </header>
+    <main class="ejercicios">
+      <div class="menu_responsive">
+        <button class="abrir_menu" id="abrir">&#9776;</button>
+        <nav id="menu_responsive">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+          <button class="cerrar_menu" id="cerrar">&times;</button>
+        </nav>
+      </div>
+
+      <section class="pagina_ejemplo">
+        <aside>
+          <ol>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in
+              justo id elit condimentum efficitur et vitae neque.
+            </li>
+            <li>
+              Nam eget rutrum metus, vel semper nunc. Cras ornare metus blandit,
+              blandit nunc ut, suscipit lectus.
+            </li>
+            <li>
+              Mauris sagittis tempus neque id aliquet. Integer dignissim quam eu
+              pharetra auctor. Aliquam nec facilisis magna, nec interdum purus.
+            </li>
+            <li>
+              Cras sit amet elementum urna. Fusce varius tortor quam, non
+              hendrerit massa mollis eget. Integer ut elit in leo consectetur
+              mollis eleifend in risus. Cras suscipit, est vitae rutrum dictum,
+              velit risus sagittis magna, at iaculis erat nunc id quam.
+            </li>
+          </ol>
+        </aside>
+        <article>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            quia suscipit laudantium repellendus reprehenderit rem tempore
+            excepturi cumque minima quidem provident culpa voluptas unde,
+            deleniti assumenda nihil voluptatum maiores nulla.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            quia suscipit laudantium repellendus reprehenderit rem tempore
+            excepturi cumque minima quidem provident culpa voluptas unde,
+            deleniti assumenda nihil voluptatum maiores nulla.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            quia suscipit laudantium repellendus reprehenderit rem tempore
+            excepturi cumque minima quidem provident culpa voluptas unde,
+            deleniti assumenda nihil voluptatum maiores nulla.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            quia suscipit laudantium repellendus reprehenderit rem tempore
+            excepturi cumque minima quidem provident culpa voluptas unde,
+            deleniti assumenda nihil voluptatum maiores nulla.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer id="footer">
+      
+    </footer>
+    <script>
+      const abrir = document.getElementById("abrir");
+      const cerrar = document.getElementById("cerrar");
+      const menu = document.getElementById("menu_responsive");
+
+      abrir.addEventListener("click", function () {
+        menu.classList.add("visible");
+      });
+
+      cerrar.addEventListener("click", function () {
+        menu.classList.remove("visible");
+      });
+
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+        }
+      });
+    </script>
+  </body>
+</html>
